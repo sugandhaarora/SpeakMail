@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical"
+    android:onClick="loginLayoutClicked"
+    tools:context="com.speakmail.LoginActivity"
+    android:background="@color/colorPrimary">
+
+    <ImageView
+        android:id="@+id/imageView_logo"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="32dp"
+        android:src="@drawable/speakmail" />
+
+    <android.support.design.widget.TextInputEditText
+        android:id="@+id/editText_email"
+        android:background="@drawable/background_edittext"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/imageView_logo"
+        android:layout_margin="16dp"
+        android:cursorVisible="false"
+        android:editable="false"
+        android:focusable="false"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:hint="Email"
+        android:inputType="textEmailAddress" />
+
+    <android.support.design.widget.TextInputEditText
+        android:id="@+id/editText_password"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/editText_email"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/background_edittext"
+        android:cursorVisible="false"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp" />
+
+
+    <Button
+        android:id="@+id/button_signUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editText_password"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/background_edittext"
+        android:text="Sign Up"
+        android:textColor="@color/colorPrimary" />
+</RelativeLayout>
