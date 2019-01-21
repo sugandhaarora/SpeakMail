@@ -1,4 +1,4 @@
-package com.speakmail;
+kpackage com.speakmail;
 
 import android.content.ActivityNotFoundException;
 import android.content.Context;
@@ -267,7 +267,7 @@ public class DraftsFragment extends Fragment implements TextToSpeech.OnInitListe
                 } else if ("logout".equals(result.get(0))) {
                     logOut();
                 } else if ("exit".equals(result.get(0))) {
-                    speak("Closing Talk Mail");
+                    speak("Closing SpeakMail");
                     new Handler().postDelayed(new Runnable() {
                         @Override
                         public void run() {
